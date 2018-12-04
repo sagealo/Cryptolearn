@@ -23,7 +23,7 @@ public class BinaryFragment extends android.support.v4.app.Fragment implements V
                              @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_binary, container, false);
-        wireWidgets();
+        wireWidgets(rootView);
         setListeners();
         return rootView;
     }
@@ -33,10 +33,10 @@ public class BinaryFragment extends android.support.v4.app.Fragment implements V
         translateButton.setOnClickListener(this);
         practiceButton.setOnClickListener(this);
     }
-    private void wireWidgets(){
-        learnButton = getView().findViewById(R.id.button_binary_learn);
-        translateButton = getView().findViewById(R.id.button_binary_translate);
-        practiceButton = getView().findViewById(R.id.button_binary_practice);
+    private void wireWidgets(View view){
+        learnButton = view.findViewById(R.id.button_binary_learn);
+        translateButton = view.findViewById(R.id.button_binary_translate);
+        practiceButton = view.findViewById(R.id.button_binary_practice);
     }
 
     @Override
