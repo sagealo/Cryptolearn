@@ -16,7 +16,7 @@ public class CaesarFragment extends android.support.v4.app.Fragment implements V
     public View onCreateView(@NonNull LayoutInflater inflater,
                              @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.fragment_binary, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_caesar, container, false);
         wireWidgets(rootView);
         setListeners();
         return rootView;

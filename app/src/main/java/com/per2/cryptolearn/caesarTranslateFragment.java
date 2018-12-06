@@ -17,6 +17,7 @@ public class caesarTranslateFragment extends android.support.v4.app.Fragment imp
     private EditText editTextInput;
     private TextView textViewShift;
     private TextView textViewOutput;
+    private int shiftNum = 0;
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater,
                              @Nullable ViewGroup container,
@@ -24,7 +25,7 @@ public class caesarTranslateFragment extends android.support.v4.app.Fragment imp
         View rootView = inflater.inflate(R.layout.fragment_binary_translate, container, false);
         wireWidgets(rootView);
         setListeners();
-        textViewShift.setText(0);
+        textViewShift.setText(shiftNum);
         return rootView;
     }
 
@@ -58,10 +59,22 @@ public class caesarTranslateFragment extends android.support.v4.app.Fragment imp
     }
 
     private void decreaseShift() {
-        textViewShift.getText();
+        if(shiftNum!=0){
+            shiftNum--;
+        }
+        else{
+            shiftNum=0;
+        }
+
     }
 
     private void increaseShift() {
+        if(shiftNum<=25){
+            shiftNum++;
+        }
+        else{
+            shiftNum=25;
+        }
     }
 
     private void translate(String s) {
