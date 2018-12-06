@@ -47,6 +47,15 @@ public class binaryTranslateFragment extends android.support.v4.app.Fragment imp
 
     private void translate(String phrase) {
         byte[] bytes = phrase.getBytes();
-        textViewOutput.setText(bytes.toString());
+        StringBuilder binary = new StringBuilder();
+        for(byte b : bytes){
+            int val= b;
+            for(int i =0; i<8; i++){
+                binary.append((val&128) == 0?0:1);
+                val<<=1;
+            }
+
+        }
+        textViewOutput.setText(binary.toString());
     }
 }

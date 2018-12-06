@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/textView_main_article"
+        android:layout_width="387dp"
+        android:layout_height="374dp"
+        android:layout_marginEnd="8dp"
+        android:text="Also known as Boolean Logic, Binary was first introduced by George Boole in the 1930s. The arrival of computers and technological advances came the need for a more sophisticated system of counting, this prompted the birth of the Binary Number System. The definition of binary code is any code that uses just two symbols to represent information. The two symbols we're using 1s and are 0s. Binary code is the way most computerized devices send, receive, and store information. How binary code works is that each letter and symbol is assigned a byte (8-bit binary code) you can turn those letters into a set of 1s and 0s using binary code."
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="19dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

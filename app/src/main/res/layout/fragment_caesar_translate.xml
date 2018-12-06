@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/button_caesarTranslate_minus"
+        android:layout_width="47dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/minus"
+        app:layout_constraintEnd_toStartOf="@+id/button_caesarTranslate_plus"
+        app:layout_constraintHorizontal_bias="0.991"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_caesarTranslate_shiftnum" />
+
+    <Button
+        android:id="@+id/button_caesarTranslate_translate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/translate"
+        app:layout_constraintEnd_toStartOf="@+id/textview_caesarTranslate_shiftnum"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittext_caesarTranslate_input" />
+
+    <TextView
+        android:id="@+id/textview_caesarTranslate_shiftnum"
+        android:layout_width="64dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/shift"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittext_caesarTranslate_input" />
+
+    <Button
+        android:id="@+id/button_caesarTranslate_plus"
+        android:layout_width="47dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="56dp"
+        android:text="@string/plus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_caesarTranslate_shiftnum" />
+
+    <EditText
+        android:id="@+id/edittext_caesarTranslate_input"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/inputcaesar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.344" />
+
+    <TextView
+        android:id="@+id/textview_caesarTranslate_output"
+        android:layout_width="192dp"
+        android:layout_height="79dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/output"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittext_caesarTranslate_input"
+        app:layout_constraintVertical_bias="0.677" />
+
+</android.support.constraint.ConstraintLayout>
