@@ -50,10 +50,10 @@ public class CaesarTranslateFragment extends android.support.v4.app.Fragment imp
                 translate(editTextInput.getText().toString(), shiftNum);
                 break;
             case R.id.button_caesarTranslate_minus:
-                increaseShift();
+                decreaseShift();
                 break;
             case R.id.button_caesarTranslate_plus:
-                decreaseShift();
+                increaseShift();
                 break;
         }
     }
@@ -65,6 +65,7 @@ public class CaesarTranslateFragment extends android.support.v4.app.Fragment imp
         else{
             shiftNum=0;
         }
+        textViewShift.setText(String.valueOf(shiftNum));
 
     }
 
@@ -75,6 +76,7 @@ public class CaesarTranslateFragment extends android.support.v4.app.Fragment imp
         else{
             shiftNum=25;
         }
+        textViewShift.setText(String.valueOf(shiftNum));
     }
 
     private void translate(String s, int shift) {
@@ -83,8 +85,16 @@ public class CaesarTranslateFragment extends android.support.v4.app.Fragment imp
             phrase[i]= s.charAt(i);
         }
         for(int i = 0; i<phrase.length; i++){
-            phrase[i]=(char)(((phrase[i]-'a'+shiftNum)%26)+'a');
+            phrase[i]=(char)(((phrase[i]-'a'+shift)%26)+'a');
         }
-        textViewOutput.setText(phrase.toString());
+        String[] output = new String[phrase.length];
+        for(int i = 0; i< phrase.length; i++){
+            output[i] = phrase[i].toString();
+        }
+        String outputString = "";
+        for(int i = 0; i< output.length; i++){
+            outputString+=output[i];
+        }
+        textViewOutput.setText(outputString);
     }
 }
