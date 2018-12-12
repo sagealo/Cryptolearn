@@ -10,7 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class caesarTranslateFragment extends android.support.v4.app.Fragment implements View.OnClickListener{
+public class CaesarTranslateFragment extends android.support.v4.app.Fragment implements View.OnClickListener{
     private Button buttonPlus;
     private Button buttonMinus;
     private Button buttonTranslate;

@@ -5,8 +5,6 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.support.v4.view.GravityCompat;
-import android.support.v4.widget.DrawerLayout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -44,13 +42,13 @@ public class BinaryFragment extends android.support.v4.app.Fragment implements V
         int id = v.getId();
         Fragment newFragment = null;
         if(id==R.id.button_binary_practice){
-            newFragment = new binaryPracticeFragment();
+            newFragment = new BinaryPracticeFragment();
         }
         else if(id==R.id.button_binary_translate){
-            newFragment = new binaryTranslateFragment();
+            newFragment = new BinaryTranslateFragment();
         }
         else if(id==R.id.button_binary_learn){
-            newFragment = new binaryLearnFragment();
+            newFragment = new BinaryLearnFragment();
         }
         if(newFragment!= null){
             FragmentManager fm = getActivity().getSupportFragmentManager();

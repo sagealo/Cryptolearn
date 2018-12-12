@@ -2,20 +2,20 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/linearLayout"
+    android:id="@+id/constraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ScrollView
+    <TextView
         android:id="@+id/textView_main_article"
         android:layout_width="387dp"
         android:layout_height="374dp"
         android:layout_marginEnd="8dp"
-        android:text="Also known as the shift cipher, the Caesar cipher is one of the oldest and simplest ciphers. It was developed by Julius Caesar who used the code to protect classified messages from his enemies. How this code works is that each message is sent with a key number which will represent the shift in the alphabet for that message. For example, if the key number of a message was 3 the letter A would shift over 3 in the alphabet and become D. Once all the letters in the message are shifted by the key number, the message will appear. "
+        android:text="@string/learn_cipher"
         android:textAppearance="@style/TextAppearance.AppCompat"
         android:textSize="19dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintHorizontal_bias="0.03"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
