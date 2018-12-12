@@ -10,7 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class caesarTranslateFragment extends android.support.v4.app.Fragment implements View.OnClickListener{
+public class CaesarTranslateFragment extends android.support.v4.app.Fragment implements View.OnClickListener{
     private Button buttonPlus;
     private Button buttonMinus;
     private Button buttonTranslate;
@@ -22,10 +22,10 @@ public class caesarTranslateFragment extends android.support.v4.app.Fragment imp
     public View onCreateView(@NonNull LayoutInflater inflater,
                              @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.fragment_binary_translate, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_caesar_translate, container, false);
         wireWidgets(rootView);
         setListeners();
-        textViewShift.setText(shiftNum);
+        textViewShift.setText(String.valueOf(shiftNum));
         return rootView;
     }
 
@@ -47,7 +47,7 @@ public class caesarTranslateFragment extends android.support.v4.app.Fragment imp
     public void onClick(View v) {
         switch(v.getId()){
             case R.id.button_caesarTranslate_translate:
-                translate(editTextInput.getText().toString());
+                translate(editTextInput.getText().toString(), shiftNum);
                 break;
             case R.id.button_caesarTranslate_minus:
                 increaseShift();
@@ -59,7 +59,7 @@ public class caesarTranslateFragment extends android.support.v4.app.Fragment imp
     }
 
     private void decreaseShift() {
-        if(shiftNum!=0){
+        if(shiftNum>0){
             shiftNum--;
         }
         else{
@@ -77,6 +77,14 @@ public class caesarTranslateFragment extends android.support.v4.app.Fragment imp
         }
     }
 
-    private void translate(String s) {
+    private void translate(String s, int shift) {
+        Character[] phrase = new Character[s.length()];
+        for(int i = 0; i<s.length(); i++){
+            phrase[i]= s.charAt(i);
+        }
+        for(int i = 0; i<phrase.length; i++){
+            phrase[i]=(char)(((phrase[i]-'a'+shiftNum)%26)+'a');
+        }
+        textViewOutput.setText(phrase.toString());
     }
 }

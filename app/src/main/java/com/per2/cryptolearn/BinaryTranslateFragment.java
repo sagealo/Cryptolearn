@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 import java.lang.reflect.Array;
 
-public class binaryTranslateFragment extends android.support.v4.app.Fragment implements View.OnClickListener{
+public class BinaryTranslateFragment extends android.support.v4.app.Fragment implements View.OnClickListener{
     private Button buttonTranslate;
     private TextView textViewOutput;
     private EditText editTextInput;

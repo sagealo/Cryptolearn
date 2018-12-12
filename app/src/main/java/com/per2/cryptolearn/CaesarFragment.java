@@ -38,10 +38,10 @@ public class CaesarFragment extends android.support.v4.app.Fragment implements V
         int id = v.getId();
         Fragment newFragment = null;
         if(id==R.id.button_caesar_learn){
-            newFragment = new caesarLearnFragment();
+            newFragment = new CaesarLearnFragment();
         }
         else if(id==R.id.button_caesar_translate){
-            newFragment = new caesarTranslateFragment();
+            newFragment = new CaesarTranslateFragment();
         }
 
         if(newFragment!= null){
