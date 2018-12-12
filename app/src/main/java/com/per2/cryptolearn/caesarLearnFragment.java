@@ -24,4 +24,4 @@ public class caesarLearnFragment extends android.support.v4.app.Fragment
         article = view.findViewById(R.id.textView_main_article);
     }
 }
-}
+
