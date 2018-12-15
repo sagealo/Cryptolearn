@@ -9,4 +9,5 @@
     tools:context=".CryptoActivity"
     tools:showIn="@layout/app_bar_crypto">
 
+
 </android.support.constraint.ConstraintLayout>

@@ -35,6 +35,13 @@ public class CryptoActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+        FragmentManager fm = getSupportFragmentManager();
+        //in the builder pattern, you can keep calling
+        //methods in a row because it returns the same
+        //data type. Before the commit, we could
+        //set the transition, change the back stack, etc
+        fm.beginTransaction().replace(R.id.container_main, new WelcomeFragment()).addToBackStack(null)
+                .commit();
     }
 
     @Override
@@ -82,6 +89,7 @@ public class CryptoActivity extends AppCompatActivity
             // Handle the binary action
             newFragment = new BinaryFragment();
         }
+
         if(newFragment!= null){
             FragmentManager fm = getSupportFragmentManager();
             //in the builder pattern, you can keep calling

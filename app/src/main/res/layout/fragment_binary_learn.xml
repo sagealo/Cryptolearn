@@ -11,6 +11,7 @@
         android:layout_width="387dp"
         android:layout_height="374dp"
         android:layout_marginEnd="8dp"
+        android:layout_marginTop="56dp"
         android:text="@string/learn_binary"
         android:textAppearance="@style/TextAppearance.AppCompat"
         android:textSize="19dp"

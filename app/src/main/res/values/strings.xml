@@ -25,4 +25,6 @@
     <string name="welcome_to_cryptolearn">Welcome to Cryptolearn</string>
     <string name="our_mission">Our Mission:</string>
     <string name="our_mission_desc">To teach people of all ages cryptography. We hope to instill a passion for computer science and its respective fields in all people and provide the resources to do so.</string>
+    <string name="what_to_do_desc">Within the app you can learn about different cryptography, translate phrases into different encoded phrases, or practice decoding codes and ciphers. Have fun!</string>
+    <string name="what_to_do">What to do?:</string>
 </resources>
