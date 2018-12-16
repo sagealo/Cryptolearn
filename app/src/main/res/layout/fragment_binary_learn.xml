@@ -9,9 +9,9 @@
     <TextView
         android:id="@+id/textView_main_article"
         android:layout_width="387dp"
-        android:layout_height="374dp"
+        android:layout_height="382dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="52dp"
         android:text="@string/learn_binary"
         android:textAppearance="@style/TextAppearance.AppCompat"
         android:textSize="19dp"
@@ -19,5 +19,20 @@
         app:layout_constraintHorizontal_bias="0.09"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="404dp"
+        android:layout_height="181dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView_main_article"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/utf8_table_7802" />
 
 </android.support.constraint.ConstraintLayout>
