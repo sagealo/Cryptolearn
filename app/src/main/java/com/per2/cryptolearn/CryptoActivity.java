@@ -89,6 +89,9 @@ public class CryptoActivity extends AppCompatActivity
             // Handle the binary action
             newFragment = new BinaryFragment();
         }
+        else if(id==R.id.nav_welcome){
+            newFragment = new WelcomeFragment();
+        }
 
         if(newFragment!= null){
             FragmentManager fm = getSupportFragmentManager();

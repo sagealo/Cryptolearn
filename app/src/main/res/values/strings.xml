@@ -11,7 +11,7 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="button">Button</string>
-    <string name="input">Input</string>
+    <string name="input_caesar_cipher">Input</string>
     <string name="output">Output</string>
     <string name="minus">-</string>
     <string name="translate">Translate</string>
@@ -27,4 +27,9 @@
     <string name="our_mission_desc">To teach people of all ages cryptography. We hope to instill a passion for computer science and its respective fields in all people and provide the resources to do so.</string>
     <string name="what_to_do_desc">Within the app you can learn about different cryptography, translate phrases into different encoded phrases, or practice decoding codes and ciphers. Have fun!</string>
     <string name="what_to_do">What to do?:</string>
+    <string name="why_learn">Binary numbers are important because using them instead of the decimal system simplifies the design of computers and related technologies. Advantages include ease of use in coding, fewer computations and less computational errors.</string>
+    <string name="why_caesar">Cryptanalysis is the art of breaking codes and ciphers. The Caesar cipher is probably the easiest of all ciphers to break. If one understands how a Caesar Cipher works, it becomes much easier to understand how other ciphers can be decoded.</string>
+    <string name="caesar_cipher">Caesar Cipher</string>
+    <string name="binary">Binary</string>
+    <string name="welcome">Welcome</string>
 </resources>
