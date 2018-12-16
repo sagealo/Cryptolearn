@@ -13,7 +13,7 @@ import android.widget.Button;
 public class BinaryFragment extends android.support.v4.app.Fragment implements View.OnClickListener {
     private Button learnButton;
     private Button translateButton;
-    private Button practiceButton;
+
     @Nullable
     @Override
 
@@ -29,22 +29,20 @@ public class BinaryFragment extends android.support.v4.app.Fragment implements V
     private void setListeners() {
         learnButton.setOnClickListener(this);
         translateButton.setOnClickListener(this);
-        practiceButton.setOnClickListener(this);
+
     }
     private void wireWidgets(View view){
         learnButton = view.findViewById(R.id.button_binary_learn);
         translateButton = view.findViewById(R.id.button_binary_translate);
-        practiceButton = view.findViewById(R.id.button_binary_practice);
+
     }
 
     @Override
     public void onClick(View v) {
         int id = v.getId();
         Fragment newFragment = null;
-        if(id==R.id.button_binary_practice){
-            newFragment = new BinaryPracticeFragment();
-        }
-        else if(id==R.id.button_binary_translate){
+
+        if(id==R.id.button_binary_translate){
             newFragment = new BinaryTranslateFragment();
         }
         else if(id==R.id.button_binary_learn){

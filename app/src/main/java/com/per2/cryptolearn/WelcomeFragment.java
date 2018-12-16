@@ -21,7 +21,7 @@ public class WelcomeFragment extends Fragment {
                              @Nullable Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_welcome, container, false);
         wireWidgets(rootView);
-
+        rootView.setBackgroundColor(100);
         return rootView;
     }
 
